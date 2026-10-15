@@ -1384,6 +1384,89 @@ select:focus-visible {
 }
 
 /* ========================================
+   14b. CHECKOUT / PAYMENT PANEL
+======================================== */
+
+.checkout-drawer {
+  gap: 22px;
+}
+
+.checkout-panel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.checkout-order-id {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 16px;
+  border: 1px dashed var(--border);
+  border-radius: 3px;
+  background: var(--cream-light);
+  font-size: 11px;
+}
+
+.checkout-order-id span {
+  color: var(--muted);
+}
+
+.checkout-order-id strong {
+  font-size: 11px;
+  letter-spacing: 0.3px;
+  word-break: break-all;
+  text-align: right;
+}
+
+.checkout-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.checkout-items > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 12px;
+}
+
+.checkout-items > div span {
+  color: var(--muted);
+}
+
+.checkout-error {
+  margin: 14px 0 0;
+  padding: 11px 14px;
+  border: 1px solid var(--danger);
+  border-radius: 3px;
+  background: rgba(201, 111, 74, 0.08);
+  color: var(--danger);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.checkout-panel .checkout-button {
+  margin-top: 20px;
+}
+
+.checkout-panel .checkout-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.checkout-panel > p {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 10px;
+  text-align: center;
+}
+
+
+/* ========================================
    15. TABLET RESPONSIVE DESIGN
 ======================================== */
 
